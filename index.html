@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calendar & Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="calendar">
+                <div class="left">
+                    <p id="date">02</p>
+                    <p id="day">Sunday</p>
+                </div>
+                <div class="right">
+                    <p id="month">June</p>
+                    <p id="year">2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clock-container">
+            <div class="clock">
+                <div class="time" id="hours">00</div>
+                <div class="label">HOURS</div>
+            </div>
+            <div class="separator">:</div>
+            <div class="clock">
+                <div class="time" id="minutes">00</div>
+                <div class="label">MINS</div>
+            </div>
+            <div class="separator">:</div>
+            <div class="clock">
+                <div class="time" id="seconds">00</div>
+                <div class="label">SEC</div>
+            </div>
+            <div class="clock" id="period-container" style="display: none;">
+                <div class="time" id="period"></div>
+                <div class="label"></div>
+            </div>
+        </div>   
+    </div>
+    
+    <button id="toggleFormat">Switch to 12-hour format</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

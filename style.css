@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1d0000, #20205b);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    width: 300px;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.left, .right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.right {
+    background: #f4351e;
+    color: #fff;
+    width: 42%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left {
+    width: 58%;
+}
+
+#date {
+    font-size: 100px;
+    line-height: -50px;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(244, 244, 244, 0.3);
+    margin-top: -90px;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.time {
+    font-size: 3em;
+    color: white;
+}
+
+.label {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.75em;
+}
+
+.separator {
+    font-size: 3em;
+    color: white;
+}
+
+button {
+    margin-top: -70px;
+    margin-left: 350px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff416c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4b2b;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .clock-container {
+        margin-top: 0;
+        padding: 15px 20px;
+    }
+
+    button {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .calendar {
+        width: 250px;
+        height: 220px;
+    }
+
+    #date {
+        font-size: 80px;
+    }
+
+    .left, .right {
+        font-size: 20px;
+    }
+
+    .time {
+        font-size: 2.5em;
+    }
+
+    .separator {
+        font-size: 2.5em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar {
+        width: 200px;
+        height: 180px;
+    }
+
+    #date {
+        font-size: 60px;
+    }
+
+    .left, .right {
+        font-size: 18px;
+    }
+
+    .time {
+        font-size: 2em;
+    }
+
+    .separator {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
